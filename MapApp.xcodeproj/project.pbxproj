@@ -21,6 +21,9 @@
 		917C38F0183D85780009FE4D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 917C38D2183D85780009FE4D /* UIKit.framework */; };
 		917C38F8183D85780009FE4D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 917C38F6183D85780009FE4D /* InfoPlist.strings */; };
 		917C38FA183D85780009FE4D /* MapAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 917C38F9183D85780009FE4D /* MapAppTests.m */; };
+		917C3904183D85AA0009FE4D /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 917C3903183D85AA0009FE4D /* MapKit.framework */; };
+		917C3906183D85B20009FE4D /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 917C3905183D85B20009FE4D /* CoreLocation.framework */; };
+		918B15CB183ED57E00BED593 /* ESPoints.m in Sources */ = {isa = PBXBuildFile; fileRef = 918B15CA183ED57E00BED593 /* ESPoints.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,10 @@
 		917C38F5183D85780009FE4D /* MapAppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MapAppTests-Info.plist"; sourceTree = "<group>"; };
 		917C38F7183D85780009FE4D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		917C38F9183D85780009FE4D /* MapAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapAppTests.m; sourceTree = "<group>"; };
+		917C3903183D85AA0009FE4D /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		917C3905183D85B20009FE4D /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		918B15C9183ED57E00BED593 /* ESPoints.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ESPoints.h; path = ../ESPoints.h; sourceTree = "<group>"; };
+		918B15CA183ED57E00BED593 /* ESPoints.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ESPoints.m; path = ../ESPoints.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +67,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				917C3906183D85B20009FE4D /* CoreLocation.framework in Frameworks */,
+				917C3904183D85AA0009FE4D /* MapKit.framework in Frameworks */,
 				917C38D1183D85780009FE4D /* CoreGraphics.framework in Frameworks */,
 				917C38D3183D85780009FE4D /* UIKit.framework in Frameworks */,
 				917C38CF183D85780009FE4D /* Foundation.framework in Frameworks */,
@@ -101,6 +110,8 @@
 		917C38CD183D85780009FE4D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				917C3905183D85B20009FE4D /* CoreLocation.framework */,
+				917C3903183D85AA0009FE4D /* MapKit.framework */,
 				917C38CE183D85780009FE4D /* Foundation.framework */,
 				917C38D0183D85780009FE4D /* CoreGraphics.framework */,
 				917C38D2183D85780009FE4D /* UIKit.framework */,
@@ -117,6 +128,8 @@
 				917C38E0183D85780009FE4D /* Main.storyboard */,
 				917C38E3183D85780009FE4D /* ESViewController.h */,
 				917C38E4183D85780009FE4D /* ESViewController.m */,
+				918B15C9183ED57E00BED593 /* ESPoints.h */,
+				918B15CA183ED57E00BED593 /* ESPoints.m */,
 				917C38E6183D85780009FE4D /* Images.xcassets */,
 				917C38D5183D85780009FE4D /* Supporting Files */,
 			);
@@ -252,6 +265,7 @@
 			files = (
 				917C38E5183D85780009FE4D /* ESViewController.m in Sources */,
 				917C38DF183D85780009FE4D /* ESAppDelegate.m in Sources */,
+				918B15CB183ED57E00BED593 /* ESPoints.m in Sources */,
 				917C38DB183D85780009FE4D /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -461,6 +475,7 @@
 				917C38FF183D85780009FE4D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		917C3900183D85780009FE4D /* Build configuration list for PBXNativeTarget "MapAppTests" */ = {
 			isa = XCConfigurationList;
@@ -469,6 +484,7 @@
 				917C3902183D85780009FE4D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

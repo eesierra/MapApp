@@ -7,7 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MapKit/MapKit.h>
+#import <CoreLocation/CoreLocation.h>
+#import "ESPoints.h"
 
-@interface ESViewController : UIViewController
+@interface ESViewController : UIViewController <MKMapViewDelegate, CLLocationManagerDelegate>
+
+@property (nonatomic, retain) IBOutlet MKMapView *location;
+@property (nonatomic, retain) CLLocationManager *locationMgr;
+
+- (IBAction)refreshLocation:(id)sender;
 
 @end
